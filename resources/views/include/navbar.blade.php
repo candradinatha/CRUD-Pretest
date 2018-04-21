@@ -11,9 +11,9 @@
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    {{-- <li class="nav-item mx-3">
                         <a class="nav-link" href="/about">About Us</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="/posts">Posts</a>
                     </li>
