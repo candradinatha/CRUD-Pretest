@@ -6,8 +6,8 @@
 	  	<p class="lead">Welcome to the Home Page</p>
 	  	<hr class="my-4">
 	  	<p class="lead">
-	    	<a class="btn btn-outline-secondary btn-lg" href="#" role="button">Login</a>
-	    	<a class="btn btn-outline-secondary btn-lg" href="#" role="button">Register</a>
+	    	<a class="btn btn-outline-secondary btn-lg" href="{{ route('login') }}">{{ __('Login') }}</a>
+	    	<a class="btn btn-outline-secondary btn-lg" href="{{ route('register') }}">{{ __('Register') }}</a>
 	  	</p>
 	</div>
 @endsection
