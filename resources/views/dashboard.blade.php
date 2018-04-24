@@ -14,7 +14,7 @@
 
         <a class="btn btn-outline-secondary" href="/posts/create">Create Post</a>
         <hr>
-        <h3>Your Blog Posts</h3>
+        <h3>Your Posts</h3>
         @if(count($posts) > 0)
             <table class="table table-striped">
                 @foreach($posts as $post)
