@@ -19,7 +19,7 @@
             <table class="table table-striped">
                 @foreach($posts as $post)
                     <tr>
-                        <th>{{$post->title}}</th>
+                        <th><a href="/posts/{{$post->id}}">{{$post->title}}</a></th>
                         <th><a href="/posts/{{$post->id}}/edit" class="btn btn-outline-secondary">Edit</a></th>
                         <th>
                             {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}
