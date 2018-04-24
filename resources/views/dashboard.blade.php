@@ -2,8 +2,8 @@
 
 @section('content')
 
+<h1>Dashboard</h1>
 <div class="card">
-    <div class="card-header">Dashboard</div>
 
     <div class="card-body">
         @if (session('status'))
@@ -21,7 +21,12 @@
                     <tr>
                         <th>{{$post->title}}</th>
                         <th><a href="/posts/{{$post->id}}/edit" class="btn btn-outline-secondary">Edit</a></th>
-                        <th></th>
+                        <th>
+                            {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}
+                                {{Form::hidden('_method', 'DELETE')}}
+                                {{Form::submit('Delete', ['class' => 'btn btn-outline-secondary'])}}
+                            {!!Form::close()!!} 
+                        </th>
                     </tr>  
                 @endforeach  
             </table>

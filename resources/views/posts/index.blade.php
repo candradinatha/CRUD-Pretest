@@ -7,7 +7,7 @@
 			<div class="card">
 				<div class="card-body">
 					<h4><a href="/posts/{{$post->id}}">{{$post->title}}</a></h4>
-					<small>Written on {{$post->created_at}}</small>
+					<small>by {{$post->user['name']}}</small>
 				</div>
 			</div>
 			<br>
